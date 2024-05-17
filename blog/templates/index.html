@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+            background-color: #f4f4f4;
+        }
+
+        .logo {
+            max-width: 200px;
+        }
+
+        nav {
+            width: 100%;
+            background-color: #333;
+        }
+
+        .menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .menu li {
+            margin: 0 20px;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 15px 0;
+            display: block;
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 180px); /* Ajusta la altura según el tamaño del header y el menú */
+        }
+
+        .button-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .button-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+
+        .button-item img {
+            max-width: 100px;
+            margin-bottom: 10px;
+        }
+
+        .button-item h3 {
+            margin: 0;
+            font-size: 16px;
+            color: #333;
+        }
+
+        footer {
+            width: 100%;
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            padding: 20px 0;
+            border-top: 1px solid #444;
+        }
+
+        .footer-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .footer-section h4 {
+            margin-bottom: 10px;
+        }
+
+        .footer-section p {
+            margin: 5px 0;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .social-icons a img {
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" class="logo">
+    </header>
+    <nav>
+        <ul class="menu">
+            <li><a href="#">SEDEBA</a></li>
+            <li><a href="#">Instituto</a></li>
+            <li><a href="#">Campus virtual</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="button-grid">
+            <div class="button-item">
+                <img src="calculadora.png" alt="Calculadora de Sueldos">
+                <h3>Calculadora de Sueldos</h3>
+            </div>
+            <div class="button-item">
+                <img src="automatizacion.png" alt="Automatización de Tareas">
+                <h3>Automatización de Tareas</h3>
+            </div>
+            <div class="button-item">
+                <img src="agenda.png" alt="Agenda">
+                <h3>Agenda</h3>
+            </div>
+            <div class="button-item">
+                <img src="calendario.png" alt="Calendario">
+                <h3>Calendario</h3>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-section">
+            <h4>Síguenos</h4>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="facebook.png" alt="Facebook">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="instagram.png" alt="Instagram">
+                </a>
+                <a href="https://youtube.com" target="_blank">
+                    <img src="youtube.png" alt="YouTube">
+                </a>
+            </div>
+        </div>
+        <div class="footer-section">
+            <h4>Dirección</h4>
+            <p>Calle Falsa 123, Ciudad, País</p>
+        </div>
+        <div class="footer-section">
+            <h4>Contacto</h4>
+            <p>Teléfono: +123 456 7890</p>
+            <p>Email: info@example.com</p>
+        </div>
+    </footer>
+</body>
+</html>
